@@ -32,9 +32,11 @@ h1 {
   font-family: 'Roboto Slab', serif;
 }
 
-/* @font-face {
+h2 {
+  color: #ff7c71;
+  text-align: right;
   font-family: 'Roboto Slab', serif;
-} */
+}
 
 
 /* Media Queries */
