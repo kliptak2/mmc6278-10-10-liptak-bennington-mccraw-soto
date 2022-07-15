@@ -28,9 +28,13 @@ h1 {
   color: #ffffff;
   text-shadow: 2px 2px #ff7c71;
   text-align: center;
-
-  font-family: Kefa Regular;
+  padding-top: 5rem;
+  font-family: 'Roboto Slab', serif;
 }
+
+/* @font-face {
+  font-family: 'Roboto Slab', serif;
+} */
 
 
 /* Media Queries */
