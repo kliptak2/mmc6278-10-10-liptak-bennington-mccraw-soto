@@ -21,6 +21,17 @@ summary {
 }
 
 /* Custom CSS */
+body {
+  background-color: #ffc1bb;
+}
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px #ff7c71;
+  text-align: center;
+
+  font-family: Kefa Regular;
+}
+
 
 /* Media Queries */
 @media (min-width: 576px) {
