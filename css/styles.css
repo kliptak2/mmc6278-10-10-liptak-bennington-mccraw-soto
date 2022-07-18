@@ -37,7 +37,30 @@ h2 {
   text-align: right;
   font-family: 'Roboto Slab', serif;
 }
+/* Homepage Cat and Dog Icons */
+svg #kitten-outline {
+  fill: #ffd9d5;
+  }
 
+  svg #kitten-fill{
+  fill: #ffffff00;
+  }
+
+  svg #kitten-fill:hover {
+  fill: #ff7c71;
+  }
+
+  svg #doggy-outline {
+  fill: #d0f5ff;
+  }
+
+  svg #doggy-fill{
+  fill: #ffffff00;
+  }
+
+  svg #doggy-fill:hover {
+  fill: #0081a4;
+  }     
 
 /* Media Queries */
 @media (min-width: 576px) {
