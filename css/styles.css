@@ -22,55 +22,82 @@ summary {
 
 /* Custom CSS */
 body {
-  background-color: #ffc1bb;
+  background-color: #ffc1bb !important;
 }
+
+#dog-container {
+  background-color: #aaedff !important;
+}
+
+#dog-container header h1 {
+  text-shadow: 2px 2px #0081a4;
+}
+
 h1 {
-  color: #ffffff;
+  color: #000;
   text-shadow: 2px 2px #ff7c71;
   text-align: center;
-  padding-top: 5rem;
   font-family: 'Roboto Slab', serif;
+  padding-top: 3rem;
 }
 
 h2 {
   color: #ff7c71;
-  text-align: right;
   font-family: 'Roboto Slab', serif;
 }
 /* Homepage Cat and Dog Icons */
 svg #kitten-outline {
-  fill: #ffd9d5;
-  }
-
-  svg #kitten-fill{
-  fill: #ffffff00;
-  }
-
-  svg #kitten-fill:hover {
-  fill: #ff7c71;
-  }
-
-  svg #doggy-outline {
-  fill: #d0f5ff;
-  }
-
-  svg #doggy-fill{
-  fill: #ffffff00;
-  }
-
-  svg #doggy-fill:hover {
-  fill: #0081a4;
-  }     
-
-/* Media Queries */
-@media (min-width: 576px) {
+fill: #ffd9d5;
 }
 
-@media (min-width: 768px) {
+svg #kitten-fill{
+fill: #ffffff00;
 }
 
-@media (min-width: 992px) {
+svg #kitten-fill:hover {
+fill: #ff7c71;
 }
 
-@media (min-width: 1200px) {
+svg #doggy-outline {
+fill: #d0f5ff;
+}
+
+svg #doggy-fill{
+fill: #ffffff00;
+}
+
+svg #doggy-fill:hover {
+fill: #0081a4;
+}
+
+/* Images to fill the full container*/
+.img-fluid {
+width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+.cat-box {
+  background-color: #ffd9d5;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dog-box {
+  background-color: #d0f5ff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#cat_result img, #dog_result img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
 }
