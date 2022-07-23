@@ -1,7 +1,9 @@
 const cat_result = document.getElementById('cat_result');
 const dog_result = document.getElementById('dog_result');
-let prev_dogs = []
+const cat_thumbnails = document.getElementById('cat_thumbnails')
+const dog_thumbnails = document.getElementById('dog_thumbnails')
 let prev_cats = []
+let prev_dogs = []
 
 function getRandomCat() {
 	fetch('https://aws.random.cat/meow')
@@ -9,6 +11,14 @@ function getRandomCat() {
 		.then(data => {
 			saveResult("cat", data.file)
 			cat_result.innerHTML = `<img src=${data.file} alt="cat" class="img-fluid" />`
+			prev_cats.forEach(url => {
+				let img = document.createElement('img')
+				img.src = url
+				console.log (img)
+				img.alt = 'cat thumbnails'
+				img.classList.add("img-fluid", "thumbnail")
+				cat_thumbnails.append(img)
+			})
 		})
 }
 
@@ -22,6 +32,14 @@ function getRandomDog() {
 			else {
 				saveResult("dog", data.url)
 				dog_result.innerHTML = `<img src=${data.url} alt="dog" class="img-fluid" />`
+				prev_dogs.forEach(url => {
+					let img = document.createElement('img')
+					img.src = url
+					console.log (img)
+					img.alt = 'dog thumbnails'
+					img.classList.add("img-fluid", "thumbnail")
+					dog_thumbnails.append(img)
+				})
 			}
 		});
 }
