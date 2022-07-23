@@ -11,6 +11,7 @@ function getRandomCat() {
 		.then(data => {
 			saveResult("cat", data.file)
 			cat_result.innerHTML = `<img src=${data.file} alt="cat" class="img-fluid" />`
+			cat_thumbnails.innerHTML = ""
 			prev_cats.forEach(url => {
 				let img = document.createElement('img')
 				img.src = url
@@ -32,6 +33,7 @@ function getRandomDog() {
 			else {
 				saveResult("dog", data.url)
 				dog_result.innerHTML = `<img src=${data.url} alt="dog" class="img-fluid" />`
+				dog_thumbnails.innerhtml = ""
 				prev_dogs.forEach(url => {
 					let img = document.createElement('img')
 					img.src = url
