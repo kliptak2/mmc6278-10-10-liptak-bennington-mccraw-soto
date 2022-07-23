@@ -37,42 +37,42 @@ h1 {
   color: #000;
   text-shadow: 2px 2px #ff7c71;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   padding-top: 3rem;
 }
 
 h2 {
   color: #ff7c71;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 /* Homepage Cat and Dog Icons */
 svg #kitten-outline {
-fill: #ffd9d5;
+  fill: #ffd9d5;
 }
 
-svg #kitten-fill{
-fill: #ffffff00;
+svg #kitten-fill {
+  fill: #ffffff00;
 }
 
 svg #kitten-fill:hover {
-fill: #ff7c71;
+  fill: #ff7c71;
 }
 
 svg #doggy-outline {
-fill: #d0f5ff;
+  fill: #d0f5ff;
 }
 
-svg #doggy-fill{
-fill: #ffffff00;
+svg #doggy-fill {
+  fill: #ffffff00;
 }
 
 svg #doggy-fill:hover {
-fill: #0081a4;
+  fill: #0081a4;
 }
 
 /* Images to fill the full container*/
 .img-fluid {
-width: 100%;
+  width: 100%;
 }
 
 button {
@@ -95,9 +95,17 @@ button {
   border-radius: 10px;
 }
 
-#cat_result img, #dog_result img {
+#cat_result img,
+#dog_result img {
   width: 100%;
   height: 550px;
   object-fit: cover;
+  object-position: center;
+}
+
+#cat_thumbnails img,
+#dog_thumbnails img {
+  width: 20%;
+  height: 250px;
   object-position: center;
 }

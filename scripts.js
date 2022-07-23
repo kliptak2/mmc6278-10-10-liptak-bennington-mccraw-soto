@@ -9,7 +9,6 @@ function getRandomCat() {
 	fetch('https://aws.random.cat/meow')
 		.then(res => res.json())
 		.then(data => {
-			saveResult("cat", data.file)
 			cat_result.innerHTML = `<img src=${data.file} alt="cat" class="img-fluid" />`
 			cat_thumbnails.innerHTML = ""
 			prev_cats.forEach(url => {
@@ -20,6 +19,7 @@ function getRandomCat() {
 				img.classList.add("img-fluid", "thumbnail")
 				cat_thumbnails.append(img)
 			})
+			saveResult("cat", data.file)
 		})
 }
 
@@ -31,9 +31,8 @@ function getRandomDog() {
 				getRandomDog();
 			}
 			else {
-				saveResult("dog", data.url)
 				dog_result.innerHTML = `<img src=${data.url} alt="dog" class="img-fluid" />`
-				dog_thumbnails.innerhtml = ""
+				dog_thumbnails.innerHTML = ""
 				prev_dogs.forEach(url => {
 					let img = document.createElement('img')
 					img.src = url
@@ -42,6 +41,7 @@ function getRandomDog() {
 					img.classList.add("img-fluid", "thumbnail")
 					dog_thumbnails.append(img)
 				})
+			saveResult("dog", data.url)
 			}
 		});
 }
@@ -67,9 +67,9 @@ document.body.onload = async function() {
 	let stringCats = localStorage.getItem("prev_cats")
 	let stringDogs = localStorage.getItem("prev_dogs")
 	if (stringCats){
-		prev_cats = await JSON.parse(stringCats)
+		prev_cats = JSON.parse(stringCats)
 	}
 	if (stringDogs){
-		prev_dogs = await JSON.parse(stringDogs)
+		prev_dogs = JSON.parse(stringDogs)
 	}
 }
