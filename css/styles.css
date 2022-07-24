@@ -1,4 +1,5 @@
 /* CSS Reset */
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -101,11 +102,13 @@ button {
   height: 550px;
   object-fit: cover;
   object-position: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 #cat_thumbnails img,
 #dog_thumbnails img {
+  padding: 5px;
   width: 20%;
-  height: 250px;
-  object-position: center;
+  height: auto;
 }
